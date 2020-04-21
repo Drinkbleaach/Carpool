@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <com.google.android.material.textfield.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+     </com.google.android.material.textfield.TextInputLayout>
+
+     <fragment
+         android:id="@+id/map"
+         android:name="com.google.android.gms.maps.SupportMapFragment"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         tools:context=".MapsActivity" />
+
+     <com.google.android.material.textfield.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+     </com.google.android.material.textfield.TextInputLayout>
+
+     <com.google.android.material.textfield.TextInputEditText
+         android:id="@+id/sou"
+         android:layout_width="300dp"
+         android:layout_height="wrap_content"
+         android:hint="Enter Source" />
+
+     <ImageButton
+    android:id="@+id/search"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@id/des"
+    android:layout_alignRight="@id/des"
+    android:layout_alignParentRight="true"
+    android:baselineAlignBottom="false"
+    map:srcCompat="@drawable/quantum_ic_search_grey600_24"
+    android:onClick="onClick"/>
+
+     <ImageButton
+         android:id="@+id/search2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@id/search"
+         android:layout_alignRight="@id/sou"
+         android:layout_alignParentLeft="false"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentRight="true"
+         android:baselineAlignBottom="false"
+         android:onClick="onClick2"
+         map:srcCompat="@drawable/quantum_ic_search_grey600_24" />
+
+     <com.google.android.material.textfield.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+     </com.google.android.material.textfield.TextInputLayout>
+
+     <com.google.android.material.textfield.TextInputEditText
+         android:id="@+id/des"
+         android:layout_width="300dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/sou"
+         android:hint="Enter Destination"
+         />
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="180dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:text="Take Ride"
+         android:background="@drawable/asc"
+         android:textColor="#ffffff"
+         android:textAllCaps="true"
+         android:textStyle="bold"
+         android:textSize="20dp"
+         android:onClick="TakeRide"
+
+     />
+
+     <Button
+         android:id="@+id/button2"
+         android:layout_width="180dp"
+         android:layout_height="wrap_content"
+         android:layout_alignRight="@id/button1"
+         android:layout_alignParentLeft="false"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+
+         android:background="@drawable/asc"
+
+         android:textColor="#ffffff"
+         android:textStyle="bold"
+         android:textSize="20dp"
+         android:text="Give Ride"
+         android:onClick="GiveRide"/>
+
+
+</RelativeLayout>

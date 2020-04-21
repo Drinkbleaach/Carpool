@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiveRide">
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Number of seats Available:" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/no"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="365dp" />
+
+    <EditText
+        android:id="@+id/date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/time_input"
+        android:layout_alignBottom="@id/time_input"
+        android:gravity="right"
+        android:hint="SELECT DATE"
+        android:inputType="none" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="SELECT TIME"
+        android:id="@+id/time_input"
+        android:inputType="none"/>
+
+</RelativeLayout>
